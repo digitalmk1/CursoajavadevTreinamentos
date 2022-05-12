@@ -70,7 +70,7 @@ public class PrimeiraClasseExecultavel {
 
 					Disciplina disciplina = new Disciplina();
 					disciplina.setDisciplina(nomeDisciplina);
-					disciplina.setNota(Double.parseDouble(nota));
+				//	disciplina.set(Double.parseDouble(nota));
 
 					aluno1.getDisciplinas().add(disciplina);
 
