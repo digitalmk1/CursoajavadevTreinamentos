@@ -17,6 +17,34 @@ public class threads {
 					/*Quero executar esse envio com tempo parada ou com um tempo determinado*/
 					System.out.println("Executando alguma rotina envio de e-mail: ");
 					try {
+						Thread.sleep(3000);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} /*Da um tempo*/
+					
+				}
+				System.out.println("Chegou ao final");
+				JOptionPane.showMessageDialog(null,"Sistema continua executlado para o usuario");
+			
+			}
+			
+		}.start(); //Start liga a thread que fica processando paralelamente por traz
+		/*codigo da rotina que eu quero executar em paralelo */
+		
+		System.out.println("-----------------divisão das threads---------------------");
+		//thred paralelo envio de NOTA FISCAL
+       new Thread() {
+			
+			public void run() {
+				
+				//codigo da rotina executa o que queremos 
+				
+				for(int pos = 0; pos< 10; pos++) {
+					
+					/*Quero executar esse envio com tempo parada ou com um tempo determinado*/
+					System.out.println("Executando alguma rotina envio de Nota fiscal: ");
+					try {
 						Thread.sleep(5000);
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
@@ -29,7 +57,6 @@ public class threads {
 			
 		}.start(); //Start liga a thread que fica processando paralelamente por traz
 		/*codigo da rotina que eu quero executar em paralelo */
-		
 		
 		System.out.println("Chegou ao final");
 		JOptionPane.showMessageDialog(null,"Sistema continua executlado para o usuario");
