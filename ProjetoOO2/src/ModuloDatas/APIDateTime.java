@@ -23,7 +23,7 @@ public class APIDateTime {
 		calendar.add(Calendar.MONTH, 3);
 		System.out.println("Somando o mês : " + new SimpleDateFormat("dd-MM-yyyy").format(calendar.getTime()));
 		
-		calendar.add(calendar.getFirstDayOfWeek(), 1);
+		calendar.add(calendar.YEAR, 1);
 		
 		System.out.println("Somando 1 ano : " + new SimpleDateFormat("dd-MM-yyyy").format(calendar.getTime()));
 	}
