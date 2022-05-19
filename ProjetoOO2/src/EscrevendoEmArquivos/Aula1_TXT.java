@@ -34,10 +34,9 @@ public class Aula1_TXT {
 		
 		
 
-		File arquivo = new File("C:\\Users\\Suporte_DigitalMK\\git\\CursoajavadevTreinamentos\\ProjetoOO2\\arquivo.txt");
+		File arquivo = new File("C:\\Users\\Suporte_DigitalMK\\git\\CursoajavadevTreinamentos\\ProjetoOO2\\arquivo.csv");
 		
 		if(!arquivo.exists()) {
-			
 			arquivo.createNewFile();
 			
 		}
@@ -49,8 +48,7 @@ public class Aula1_TXT {
 		}
 		*/
 		for (Pessoa p : pessoas) {
-			escrever_no_arquivo.write(p.getNome()+";"+" \n" + p.getIdade() 
-			+" Anos" + ";" + "\n" + p.getEmail()+"\n"+"=========================="+"\n");
+			escrever_no_arquivo.write(p.getNome()+ ";" + p.getIdade() + ";" + p.getEmail()+"\n");
 			
 		}
 		escrever_no_arquivo.flush();
